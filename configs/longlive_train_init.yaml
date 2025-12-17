@@ -19,9 +19,9 @@ guidance_scale: 3.0
 denoising_loss_type: flow
 mixed_precision: true
 seed: 0
-wandb_key: YOUR_WANDB_KEY
-wandb_entity: YOUR_WANDB_ENTITY
-wandb_project: YOUR_WANDB_PROJECT
+wandb_key: bd081427cc9e17a88dff2e86dc7b34ca47cb1dfd
+wandb_entity: null
+wandb_project: VideoGeneration
 sharding_strategy: hybrid_full
 lr: 2.0e-06
 lr_critic: 4.0e-07

@@ -6,9 +6,12 @@ LOGDIR=logs
 WANDB_SAVE_DIR=wandb
 echo "CONFIG="$CONFIG
 
+# CUDA_VISIBLE_DEVICES=0 
 torchrun \
   --nproc_per_node=8 \
   train.py \
   --config_path $CONFIG \
   --logdir $LOGDIR \
-  --wandb-save-dir $WANDB_SAVE_DIR
+  --wandb-save-dir $WANDB_SAVE_DIR \
+  --disable-wandb \
+  --no-one-logger
